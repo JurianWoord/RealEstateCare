@@ -3,7 +3,7 @@
     {
       "inspectionId": "INS001",
       "propertyId": "PROP001",
-      "date": "2024-07-31",
+      "date": "2024-07-27",
       "type": "damage",
       "details": {
         "location": "Living Room",
@@ -17,7 +17,7 @@
     {
       "inspectionId": "INS002",
       "propertyId": "PROP002",
-      "date": "2024-07-30",
+      "date": "2024-07-28",
       "type": "maintenance",
       "details": {
         "location": "Roof",
@@ -46,7 +46,7 @@
     {
       "inspectionId": "INS004",
       "propertyId": "PROP004",
-      "date": "2024-07-28",
+      "date": "2024-07-30",
       "type": "modification",
       "details": {
         "existingModifications": "modifications_list.pdf",
@@ -61,7 +61,7 @@
     {
       "inspectionId": "INS005",
       "propertyId": "PROP005",
-      "date": "2024-07-27",
+      "date": "2024-07-31",
       "type": "damage",
       "details": {
         "location": "Garage",
