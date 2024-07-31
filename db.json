@@ -1,183 +1,75 @@
 {
   "inspections": [
     {
-      "inspectionId": "INS-001",
-      "date": "2024-07-30",
-      "location": "123 Main St",
-      "inspector": "John Doe",
-      "damage": {
+      "inspectionId": "INS001",
+      "propertyId": "PROP001",
+      "date": "2024-07-31",
+      "type": "damage",
+      "details": {
         "location": "Living Room",
         "newDamage": true,
         "damageType": "wear and tear",
-        "date": "2024-07-29",
-        "urgentActionRequired": false,
-        "description": "Cracks in the wall"
-      },
-      "maintenance": {
-        "location": "Kitchen",
-        "maintenanceType": "plumbing",
-        "urgentActionRequired": true,
-        "costEstimate": "500-1,500"
-      },
-      "technicalInstallations": {
+        "acuteActionRequired": false,
+        "description": "Minor scratches on the wall",
+        "photos": ["photo1.jpg", "photo2.jpg"]
+      }
+    },
+    {
+      "inspectionId": "INS002",
+      "propertyId": "PROP002",
+      "date": "2024-07-30",
+      "type": "maintenance",
+      "details": {
+        "location": "Roof",
+        "maintenanceType": "painting",
+        "acuteActionRequired": true,
+        "costEstimate": "500-1500",
+        "description": "Old paint peeling off",
+        "photos": ["photo3.jpg"]
+      }
+    },
+    {
+      "inspectionId": "INS003",
+      "propertyId": "PROP003",
+      "date": "2024-07-29",
+      "type": "technical_installation",
+      "details": {
         "location": "Basement",
         "installationType": "heating",
-        "reportedIssues": "No hot water",
-        "testProcedure": "test_heating.pdf",
-        "approved": false,
-        "comments": "Requires urgent repair"
-      },
-      "modifications": {
-        "existingDocumentation": "modifications.pdf",
-        "foundModificationLocation": "Garage",
-        "performedBy": "tenant",
-        "modificationDescription": "Installed new shelves",
-        "actionRequired": "approve",
-        "comments": "Well installed"
+        "reportedIssues": "No issues reported",
+        "testProcedure": "test_procedure_heating.pdf",
+        "approved": true,
+        "comments": "System functioning well",
+        "photos": ["photo4.jpg"]
       }
     },
     {
-      "inspectionId": "INS-002",
+      "inspectionId": "INS004",
+      "propertyId": "PROP004",
       "date": "2024-07-28",
-      "location": "456 Elm St",
-      "inspector": "Jane Smith",
-      "damage": {
-        "location": "Bedroom",
-        "newDamage": false,
-        "damageType": "intentional",
-        "date": "2024-07-27",
-        "urgentActionRequired": true,
-        "description": "Broken window"
-      },
-      "maintenance": {
-        "location": "Roof",
-        "maintenanceType": "roofing",
-        "urgentActionRequired": true,
-        "costEstimate": "1,500+"
-      },
-      "technicalInstallations": {
-        "location": "Attic",
-        "installationType": "ventilation",
-        "reportedIssues": "Fan not working",
-        "testProcedure": "test_ventilation.pdf",
-        "approved": false,
-        "comments": "Needs replacement"
-      },
-      "modifications": {
-        "existingDocumentation": "modifications.pdf",
-        "foundModificationLocation": "Garden",
-        "performedBy": "unknown",
-        "modificationDescription": "Built a new shed",
-        "actionRequired": "remove",
-        "comments": "Unauthorized structure"
-      }
-    },
-    {
-      "inspectionId": "INS-003",
-      "date": "2024-07-27",
-      "location": "789 Maple St",
-      "inspector": "Alice Johnson",
-      "damage": {
-        "location": "Bathroom",
-        "newDamage": true,
-        "damageType": "calamity",
-        "date": "2024-07-26",
-        "urgentActionRequired": true,
-        "description": "Flooding damage"
-      },
-      "maintenance": {
-        "location": "Living Room",
-        "maintenanceType": "painting",
-        "urgentActionRequired": false,
-        "costEstimate": "0-500"
-      },
-      "technicalInstallations": {
+      "type": "modification",
+      "details": {
+        "existingModifications": "modifications_list.pdf",
         "location": "Kitchen",
-        "installationType": "electricity",
-        "reportedIssues": "Faulty wiring",
-        "testProcedure": "test_electricity.pdf",
-        "approved": false,
-        "comments": "Immediate fix needed"
-      },
-      "modifications": {
-        "existingDocumentation": "modifications.pdf",
-        "foundModificationLocation": "Patio",
-        "performedBy": "contractor",
-        "modificationDescription": "Extended deck",
-        "actionRequired": "approve",
-        "comments": "Well built"
+        "executedBy": "tenant",
+        "modificationDescription": "Installed new cabinets",
+        "actionToBeTaken": "approve",
+        "comments": "High-quality installation",
+        "photos": ["photo5.jpg"]
       }
     },
     {
-      "inspectionId": "INS-004",
-      "date": "2024-07-25",
-      "location": "101 Pine St",
-      "inspector": "Bob Brown",
-      "damage": {
-        "location": "Hallway",
-        "newDamage": true,
-        "damageType": "normal use",
-        "date": "2024-07-24",
-        "urgentActionRequired": false,
-        "description": "Scuffed walls"
-      },
-      "maintenance": {
-        "location": "Dining Room",
-        "maintenanceType": "woodwork",
-        "urgentActionRequired": false,
-        "costEstimate": "500-1,500"
-      },
-      "technicalInstallations": {
-        "location": "Bedroom",
-        "installationType": "security",
-        "reportedIssues": "Alarm not functioning",
-        "testProcedure": "test_security.pdf",
-        "approved": false,
-        "comments": "Replace batteries"
-      },
-      "modifications": {
-        "existingDocumentation": "modifications.pdf",
-        "foundModificationLocation": "Balcony",
-        "performedBy": "tenant",
-        "modificationDescription": "Added planters",
-        "actionRequired": "approve",
-        "comments": "Enhances appearance"
-      }
-    },
-    {
-      "inspectionId": "INS-005",
-      "date": "2024-07-23",
-      "location": "202 Birch St",
-      "inspector": "Charlie Davis",
-      "damage": {
+      "inspectionId": "INS005",
+      "propertyId": "PROP005",
+      "date": "2024-07-27",
+      "type": "damage",
+      "details": {
         "location": "Garage",
         "newDamage": true,
-        "damageType": "violence",
-        "date": "2024-07-22",
-        "urgentActionRequired": true,
-        "description": "Graffiti"
-      },
-      "maintenance": {
-        "location": "Driveway",
-        "maintenanceType": "paving",
-        "urgentActionRequired": true,
-        "costEstimate": "1,500+"
-      },
-      "technicalInstallations": {
-        "location": "Bathroom",
-        "installationType": "plumbing",
-        "reportedIssues": "Leaking pipes",
-        "testProcedure": "test_plumbing.pdf",
-        "approved": false,
-        "comments": "Urgent repair needed"
-      },
-      "modifications": {
-        "existingDocumentation": "modifications.pdf",
-        "foundModificationLocation": "Fence",
-        "performedBy": "tenant",
-        "modificationDescription": "Installed new gate",
-        "actionRequired": "approve",
-        "comments": "Functional improvement"
+        "damageType": "accident",
+        "acuteActionRequired": true,
+        "description": "Broken window due to storm",
+        "photos": ["photo6.jpg", "photo7.jpg"]
       }
     }
   ]
