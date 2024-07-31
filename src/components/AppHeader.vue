@@ -11,7 +11,8 @@
     <span class="ms-2">3:13PM</span>
   </v-system-bar>
   <v-toolbar color="secondary">
-    <v-img src="@/assets/logoREC-white.svg" class="text-white"></v-img>
+
+    <v-img @click="$router.push({ name: 'home' })" src="@/assets/logoREC-white.svg" class="text-white"></v-img>
 
     <v-spacer></v-spacer>
 
