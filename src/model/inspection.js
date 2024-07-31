@@ -1,15 +1,11 @@
 class Inspection {
-  constructor({ inspectionId, date, location, inspector, damage, maintenance, technicalInstallations, modifications }) {
+  constructor({ inspectionId, propertyId, date, type, details }) {
     this.inspectionId = inspectionId;
+    this.propertyId = propertyId;
     this.date = new Date(date);
-    this.location = location;
-    this.inspector = inspector;
-    this.damage = damage;
-    this.maintenance = maintenance ;
-    this.technicalInstallations = technicalInstallations;
-    this.modifications = modifications;
+    this.type = type;
+    this.details = details;
   }
-
 }
 
 export default Inspection;

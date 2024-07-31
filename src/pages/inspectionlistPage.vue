@@ -38,14 +38,14 @@ onMounted(() => {
               <thead>
               <tr>
                 <th class="text-left">Date</th>
-                <th class="text-left">Location</th>
+                <th class="text-left">Type</th>
                 <th class="text-left">Inspector</th>
               </tr>
               </thead>
               <tbody>
               <tr v-for="item in inspections" :key="item.inspectionId">
                 <td>{{ formatDate(item.date) }}</td>
-                <td>{{ item.location }}</td>
+                <td>{{ item.type }}</td>
                 <td>{{ item.inspector }}</td>
               </tr>
               </tbody>
