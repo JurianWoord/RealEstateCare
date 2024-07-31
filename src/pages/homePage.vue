@@ -7,7 +7,7 @@
     <v-row>
 
       <v-col cols="6">
-        <v-card>
+        <v-card :to="{ name: 'home' }">
           <v-card-text class="d-flex justify-center">
             <v-icon icon="mdi-invoice-clock-outline" size="128"></v-icon>
           </v-card-text>
