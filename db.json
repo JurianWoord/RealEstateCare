@@ -32,7 +32,7 @@
       "inspectionId": "INS003",
       "propertyId": "PROP003",
       "date": "2024-07-29",
-      "type": "technical_installation",
+      "type": "installation",
       "details": {
         "location": "Basement",
         "installationType": "heating",

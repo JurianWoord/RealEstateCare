@@ -5,6 +5,12 @@ import { getInspections } from '@/service/inspectionService';
 
 const inspections = ref([]);
 
+const headers = [
+  { title: 'Number', key: 'inspectionId', align: 'start' },
+  { title: 'type', key: 'type', align: 'start' },
+  { title: 'Date', key: 'date', align: 'start' },
+]
+
 const fetchInspections = async () => {
   try {
     const data = await getInspections();
@@ -34,22 +40,11 @@ onMounted(() => {
             <span class="headline">Inspection Reports</span>
           </v-card-title>
           <v-card-text class="pa-0">
-            <v-table density="comfortable">
-              <thead>
-              <tr>
-                <th class="text-left">Number</th>
-                <th class="text-left">Date</th>
-                <th class="text-left">Type</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr v-for="item in inspections" :key="item.inspectionId">
-                <td>{{item.inspectionId}}</td>
-                <td>{{formatDate(item.date)}}</td>
-                <td>{{item.type}}</td>
-              </tr>
-              </tbody>
-            </v-table>
+            <v-data-table :headers="headers" :items="inspections">
+              <template v-slot:item.date="{ value }">
+                {{ formatDate(value) }}
+              </template>
+            </v-data-table>
           </v-card-text>
         </v-card>
       </v-col>
