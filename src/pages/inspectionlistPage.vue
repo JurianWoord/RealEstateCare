@@ -1,9 +1,13 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { getInspections } from '@/service/inspectionService';
+import DamageForm from "@/components/damageForm.vue";
 
 
 const inspections = ref([]);
+const showDialog = ref(false);
+const selectedItem = ref(null);
+
 
 const headers = [
   { title: 'Number', key: 'inspectionId', align: 'start' },
@@ -29,6 +33,12 @@ onMounted(() => {
   console.log('Component mounted, fetching inspections...'); // Log bij het mounten van de component
   fetchInspections();
 });
+
+
+const onRowClick = function(e, { item }){
+selectedItem.value = {...item};
+showDialog.value = true;
+}
 </script>
 
 <template>
@@ -40,7 +50,7 @@ onMounted(() => {
             <span class="headline">Inspection Reports</span>
           </v-card-title>
           <v-card-text class="pa-0">
-            <v-data-table :headers="headers" :items="inspections">
+            <v-data-table :headers="headers" :items="inspections" @click:row="onRowClick">
               <template v-slot:item.date="{ value }">
                 {{ formatDate(value) }}
               </template>
@@ -49,6 +59,12 @@ onMounted(() => {
         </v-card>
       </v-col>
     </v-row>
+    <v-dialog v-model="showDialog" fullscreen
+    v-if="showDialog">
+      <v-card>
+      <damage-form :item="selectedItem" />
+      </v-card>
+    </v-dialog>
   </v-container>
 </template>
 
