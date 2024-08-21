@@ -50,17 +50,6 @@
         </v-card>
       </v-col>
 
-      <v-col cols="6">
-        <v-card :to="{ name: 'damageForm' }">
-          <v-card-text class="d-flex justify-center">
-            <v-icon icon="mdi-format-list-text" size="128"></v-icon>
-          </v-card-text>
-          <v-card-actions class="d-flex justify-center">
-            damage form
-          </v-card-actions>
-        </v-card>
-      </v-col>
-
     </v-row>
   </v-container>
 </template>

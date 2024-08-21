@@ -31,7 +31,6 @@ function formatDate (value) {
     let date = new Date(value);
     date.setMinutes(date.getMinutes() - date.getTimezoneOffset());
     return date.toISOString().substr(0, 10).split('-').reverse().join('-');
-
   }
 }
 
@@ -41,6 +40,7 @@ function formatDate (value) {
 <template>
 
   <v-container>
+    <h1 class="pa-1">Schade</h1>
     <v-form ref="form" v-model="valid" lazy-validation>
       <v-row>
         <v-col cols="12" md="6">

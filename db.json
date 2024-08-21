@@ -4,13 +4,13 @@
       "inspectionId": "INS001",
       "propertyId": "PROP001",
       "date": "2024-07-27",
-      "type": "damage",
+      "type": "schade",
       "details": {
-        "location": "Living Room",
+        "location": "Woonkamer",
         "newDamage": true,
-        "damageType": "wear and tear",
+        "damageType": "slijtage",
         "acuteActionRequired": false,
-        "description": "Minor scratches on the wall",
+        "description": "Kleine krassen op de muur",
         "photos": ["photo1.jpg", "photo2.jpg"]
       }
     },
@@ -18,13 +18,13 @@
       "inspectionId": "INS002",
       "propertyId": "PROP002",
       "date": "2024-07-28",
-      "type": "maintenance",
+      "type": "onderhoud",
       "details": {
-        "location": "Roof",
-        "maintenanceType": "painting",
+        "location": "Keuken",
+        "maintenanceType": "schilderwerk",
         "acuteActionRequired": true,
         "costEstimate": "500-1500",
-        "description": "Old paint peeling off",
+        "description": "Oude verf bladdert af",
         "photos": ["photo3.jpg"]
       }
     },
@@ -32,14 +32,14 @@
       "inspectionId": "INS003",
       "propertyId": "PROP003",
       "date": "2024-07-29",
-      "type": "installation",
+      "type": "installatie",
       "details": {
-        "location": "Basement",
-        "installationType": "heating",
-        "reportedIssues": "No issues reported",
+        "location": "Kelder",
+        "installationType": "verwarming",
+        "reportedIssues": "Verwarming doet het niet meer",
         "testProcedure": "test_procedure_heating.pdf",
         "approved": true,
-        "comments": "System functioning well",
+        "comments": "Systeem nagekeken en gereset, bewoner had eraan gezeten, is nu verholpen",
         "photos": ["photo4.jpg"]
       }
     },
@@ -47,14 +47,14 @@
       "inspectionId": "INS004",
       "propertyId": "PROP004",
       "date": "2024-07-30",
-      "type": "modification",
+      "type": "aanpassing",
       "details": {
         "existingModifications": "modifications_list.pdf",
-        "location": "Kitchen",
-        "executedBy": "tenant",
-        "modificationDescription": "Installed new cabinets",
-        "actionToBeTaken": "approve",
-        "comments": "High-quality installation",
+        "location": "Keuken",
+        "executedBy": "huurder",
+        "modificationDescription": "Nieuwe kasten geplaatst",
+        "actionToBeTaken": "accepteren",
+        "comments": "Hoogwaardige installatie",
         "photos": ["photo5.jpg"]
       }
     },
@@ -62,13 +62,13 @@
       "inspectionId": "INS005",
       "propertyId": "PROP005",
       "date": "2024-07-31",
-      "type": "damage",
+      "type": "schade",
       "details": {
         "location": "Garage",
         "newDamage": true,
-        "damageType": "accident",
+        "damageType": "anders",
         "acuteActionRequired": true,
-        "description": "Broken window due to storm",
+        "description": "Gebroken raam door storm",
         "photos": ["photo6.jpg", "photo7.jpg"]
       }
     }

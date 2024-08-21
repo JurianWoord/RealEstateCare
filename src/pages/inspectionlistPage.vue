@@ -2,7 +2,9 @@
 import { ref, onMounted } from 'vue';
 import { getInspections } from '@/service/inspectionService';
 import DamageForm from "@/components/damageForm.vue";
-
+import ModificationForm from "@/components/modificationForm.vue";
+import InstallationForm from "@/components/installationForm.vue";
+import MaintenanceForm from "@/components/maitenanceForm.vue";
 
 const inspections = ref([]);
 const showDialog = ref(false);
@@ -39,6 +41,7 @@ const onRowClick = function(e, { item }){
 selectedItem.value = {...item};
 showDialog.value = true;
 }
+
 </script>
 
 <template>
@@ -62,7 +65,10 @@ showDialog.value = true;
     <v-dialog v-model="showDialog" fullscreen
     v-if="showDialog">
       <v-card>
-      <damage-form :item="selectedItem" />
+        <DamageForm v-if="selectedItem.type === 'schade'" :item="selectedItem" />
+        <ModificationForm v-else-if="selectedItem.type === 'aanpassing'" :item="selectedItem" />
+        <InstallationForm v-else-if="selectedItem.type === 'installatie'" :item="selectedItem" />
+        <MaintenanceForm v-else-if="selectedItem.type === 'onderhoud'" :item="selectedItem" />
       </v-card>
     </v-dialog>
   </v-container>
