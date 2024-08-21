@@ -34,7 +34,7 @@ const rules = {
 <template>
 
   <v-container>
-    <h1 class="pa-1">Aanpassingen</h1>
+    <h1 class="pa-1 text-center">Aanpassingen</h1>
     <v-form ref="form" v-model="valid" lazy-validation>
       <v-row>
         <v-col cols="12" md="6">

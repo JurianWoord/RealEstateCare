@@ -40,7 +40,7 @@ function formatDate (value) {
 <template>
 
   <v-container>
-    <h1 class="pa-1">Schade</h1>
+    <h1 class="pa-1 text-center">Schade</h1>
     <v-form ref="form" v-model="valid" lazy-validation>
       <v-row>
         <v-col cols="12" md="6">
