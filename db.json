@@ -4,36 +4,101 @@
       "inspectionId": "INS001",
       "propertyId": "PROP001",
       "date": "2024-07-27",
-      "type": "schade",
-      "details": {
+      "damage": {
         "location": "Woonkamer",
         "newDamage": true,
         "damageType": "slijtage",
         "acuteActionRequired": false,
         "description": "Kleine krassen op de muur",
         "photos": ["photo1.jpg", "photo2.jpg"]
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": null,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": null,
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
       }
     },
     {
       "inspectionId": "INS002",
       "propertyId": "PROP002",
       "date": "2024-07-28",
-      "type": "onderhoud",
-      "details": {
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": null,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
         "location": "Keuken",
         "maintenanceType": "schilderwerk",
         "acuteActionRequired": true,
         "costEstimate": "500-1500",
         "description": "Oude verf bladdert af",
         "photos": ["photo3.jpg"]
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": null,
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
       }
     },
     {
       "inspectionId": "INS003",
       "propertyId": "PROP003",
       "date": "2024-07-29",
-      "type": "installatie",
-      "details": {
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": null,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": null,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
         "location": "Kelder",
         "installationType": "verwarming",
         "reportedIssues": "Verwarming doet het niet meer",
@@ -41,14 +106,47 @@
         "approved": true,
         "comments": "Systeem nagekeken en gereset, bewoner had eraan gezeten, is nu verholpen",
         "photos": ["photo4.jpg"]
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
       }
     },
     {
       "inspectionId": "INS004",
       "propertyId": "PROP004",
       "date": "2024-07-30",
-      "type": "aanpassing",
-      "details": {
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": null,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": null,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": null,
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
         "existingModifications": "modifications_list.pdf",
         "location": "Keuken",
         "executedBy": "huurder",
@@ -62,14 +160,39 @@
       "inspectionId": "INS005",
       "propertyId": "PROP005",
       "date": "2024-07-31",
-      "type": "schade",
-      "details": {
+      "damage": {
         "location": "Garage",
         "newDamage": true,
         "damageType": "anders",
         "acuteActionRequired": true,
         "description": "Gebroken raam door storm",
         "photos": ["photo6.jpg", "photo7.jpg"]
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": null,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": null,
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
       }
     }
   ]
