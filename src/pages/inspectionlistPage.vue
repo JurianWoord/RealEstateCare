@@ -13,7 +13,7 @@ const selectedItem = ref(null);
 
 const headers = [
   { title: 'Number', key: 'inspectionId', align: 'start' },
-  { title: 'type', key: 'type', align: 'start' },
+  { title: 'Location', key: 'propertyId', align: 'start' },
   { title: 'Date', key: 'date', align: 'start' },
 ]
 
@@ -65,10 +65,10 @@ showDialog.value = true;
     <v-dialog v-model="showDialog" fullscreen
     v-if="showDialog">
       <v-card>
-        <DamageForm v-if="selectedItem.type === 'schade'" :item="selectedItem" />
-        <ModificationForm v-else-if="selectedItem.type === 'aanpassing'" :item="selectedItem" />
-        <InstallationForm v-else-if="selectedItem.type === 'installatie'" :item="selectedItem" />
-        <MaintenanceForm v-else-if="selectedItem.type === 'onderhoud'" :item="selectedItem" />
+        <DamageForm v-if="selectedItem.damage && Object.keys(selectedItem.damage).some(key => selectedItem.damage[key] !== null)" :item="selectedItem" />
+        <ModificationForm v-if="selectedItem.modification && Object.keys(selectedItem.modification).some(key => selectedItem.modification[key] !== null)" :item="selectedItem" />
+        <InstallationForm v-if="selectedItem.installation && Object.keys(selectedItem.installation).some(key => selectedItem.installation[key] !== null)" :item="selectedItem" />
+        <MaintenanceForm v-if="selectedItem.maintenance && Object.keys(selectedItem.maintenance).some(key => selectedItem.maintenance[key] !== null)" :item="selectedItem" />
       </v-card>
     </v-dialog>
   </v-container>
