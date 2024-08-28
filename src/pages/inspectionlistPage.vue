@@ -12,9 +12,9 @@ const selectedItem = ref(null);
 
 
 const headers = [
-  { title: 'Number', key: 'inspectionId', align: 'start' },
-  { title: 'Location', key: 'propertyId', align: 'start' },
-  { title: 'Date', key: 'date', align: 'start' },
+  { title: 'Nummer', key: 'inspectionId', align: 'start' },
+  { title: 'Locatie', key: 'propertyId', align: 'start' },
+  { title: 'Datum', key: 'date', align: 'start' },
 ]
 
 const fetchInspections = async () => {
@@ -50,7 +50,7 @@ showDialog.value = true;
       <v-col cols="12">
         <v-card>
           <v-card-title>
-            <span class="headline">Inspection Reports</span>
+            <span class="headline">Uitgevoerde inspecties</span>
           </v-card-title>
           <v-card-text class="pa-0">
             <v-data-table :headers="headers" :items="inspections" @click:row="onRowClick">
