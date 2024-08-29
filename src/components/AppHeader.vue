@@ -17,7 +17,7 @@
     <v-spacer></v-spacer>
 
     <v-btn icon="mdi-bell" />
-    <v-btn icon="mdi-cog" />
+    <v-btn icon="mdi-cog" @click="$router.push({name: 'settings'})"/>
 
   </v-toolbar>
 </template>

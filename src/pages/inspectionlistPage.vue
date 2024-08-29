@@ -9,7 +9,7 @@ import MaintenanceForm from "@/components/maitenanceForm.vue";
 const inspections = ref([]);
 const showDialog = ref(false);
 const selectedItem = ref(null);
-
+const tab = ref('one');
 
 const headers = [
   { title: 'Nummer', key: 'inspectionId', align: 'start' },
@@ -65,10 +65,45 @@ showDialog.value = true;
     <v-dialog v-model="showDialog" fullscreen
     v-if="showDialog">
       <v-card>
-        <DamageForm v-if="selectedItem.damage && Object.keys(selectedItem.damage).some(key => selectedItem.damage[key] !== null)" :item="selectedItem" />
-        <ModificationForm v-if="selectedItem.modification && Object.keys(selectedItem.modification).some(key => selectedItem.modification[key] !== null)" :item="selectedItem" />
-        <InstallationForm v-if="selectedItem.installation && Object.keys(selectedItem.installation).some(key => selectedItem.installation[key] !== null)" :item="selectedItem" />
-        <MaintenanceForm v-if="selectedItem.maintenance && Object.keys(selectedItem.maintenance).some(key => selectedItem.maintenance[key] !== null)" :item="selectedItem" />
+        <v-tabs
+          show-arrows
+          v-model="tab"
+          bg-color="primary"
+        >
+          <v-tab value="damage">Schade</v-tab>
+          <v-tab value="installation">Aanpassingen</v-tab>
+          <v-tab value="modicication">Inspectie</v-tab>
+          <v-tab value="maitenance">onderhoud</v-tab>
+        </v-tabs>
+
+        <v-tabs-window v-model="tab" style="height: 100%; overflow-y: auto;">
+          <v-tabs-window-item value="damage">
+            <DamageForm
+              :item="selectedItem"
+              @close="showDialog = false" />
+          </v-tabs-window-item>
+
+          <v-tabs-window-item value="installation">
+            <ModificationForm
+              :item="selectedItem"
+              @close="showDialog = false"
+            />
+          </v-tabs-window-item>
+
+          <v-tabs-window-item value="modicication">
+            <InstallationForm
+              :item="selectedItem"
+              @close="showDialog = false"
+            />
+          </v-tabs-window-item>
+
+          <v-tabs-window-item value="maitenance">
+            <MaintenanceForm
+              :item="selectedItem"
+              @close="showDialog = false"
+            />
+          </v-tabs-window-item>
+        </v-tabs-window>
       </v-card>
     </v-dialog>
   </v-container>

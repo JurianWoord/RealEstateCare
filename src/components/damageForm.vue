@@ -3,8 +3,10 @@ import { ref } from 'vue';
 
 
 const props = defineProps({
-  item: {type: Object, default: null}
+  item: {type: Object, default: null},
 })
+
+const emit = defineEmits(['close']);
 
 const valid = ref(false);
 const damageTypes = ['moedwillig', 'slijtage', 'geweld', 'normaal gebruik', 'calamiteit', 'anders'];
@@ -137,7 +139,18 @@ function formatDate (value) {
         </v-col>
 
         <v-col cols="12">
-          <v-btn @click="" :disabled="true">Submit</v-btn>
+          <v-file-input
+            label="Bewijs toevoegen"
+            prepend-icon="mdi-camera"
+            multiple
+          ></v-file-input>
+        </v-col>
+
+        <v-col cols="12">
+          <v-btn @click="" :disabled="true" block >Opslaan</v-btn>
+        </v-col>
+        <v-col cols="12">
+          <v-btn @click="emit('close')" color="primary" block >Sluiten</v-btn>
         </v-col>
       </v-row>
     </v-form>

@@ -4,6 +4,7 @@ import HomePage from '@/pages/homePage.vue'
 import DefaultLayout from "@/layouts/defaultLayout.vue";
 import inspectionlistPage from "@/pages/inspectionlistPage.vue";
 import LoginPage from "@/pages/loginPage.vue";
+import settingsPage from "@/pages/settingsPage.vue"
 
 const routes = [
   {
@@ -25,6 +26,12 @@ const routes = [
         name: 'inspectionlist',
         path: 'inspectionlist',
         component: inspectionlistPage,
+        meta: { requiresAuth: true },
+      },
+      {
+        name: 'settings',
+        path: 'settings',
+        component: settingsPage,
         meta: { requiresAuth: true },
       },
     ],

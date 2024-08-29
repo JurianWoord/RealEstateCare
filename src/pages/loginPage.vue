@@ -18,6 +18,7 @@ function handleLogin() {
   if (username.value === validUsername && password.value === validPassword) {
     is2FAStep.value = true;
     generated2FACode.value = Math.floor(100000 + Math.random() * 900000).toString();
+    setTimeout(() => {twoFACode.value = generated2FACode.value;}, 1000);
     console.log("Simulated 2FA code:", generated2FACode.value);
   } else {
     errorMessage.value = 'Ongeldige gebruikersnaam of wachtwoord.';
@@ -76,6 +77,7 @@ function handle2FA() {
               <v-otp-input
                 v-model="twoFACode"
                 required
+
               ></v-otp-input>
 
               <v-btn type="submit" color="primary" block>Verify</v-btn>
