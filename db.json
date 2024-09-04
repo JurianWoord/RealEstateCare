@@ -1,5 +1,5 @@
 {
-  "inspections": [
+  "executed_inspections": [
     {
       "inspectionId": "INS001",
       "propertyId": "PROP001",
@@ -83,19 +83,19 @@
       "propertyId": "PROP003",
       "date": "2024-07-29",
       "damage": {
-        "location": null,
-        "newDamage": null,
-        "damageType": null,
-        "acuteActionRequired": null,
-        "description": null,
+        "location": "Badkamer",
+        "newDamage": false,
+        "damageType": "anders",
+        "acuteActionRequired": "true",
+        "description": "Slot op badkamerdeur werkt niet.",
         "photos": null
       },
       "maintenance": {
-        "location": null,
-        "maintenanceType": null,
-        "acuteActionRequired": null,
-        "costEstimate": null,
-        "description": null,
+        "location": "Woonkamer",
+        "maintenanceType": "houtrot",
+        "acuteActionRequired": false,
+        "costEstimate": "500-1.500",
+        "description": "Kozijn aan de voorkant is verrot.",
         "photos": null
       },
       "installation": {
@@ -108,12 +108,12 @@
         "photos": null
       },
       "modification": {
-        "existingModifications": null,
-        "location": null,
-        "executedBy": null,
-        "modificationDescription": null,
-        "actionToBeTaken": null,
-        "comments": null,
+        "existingModifications": "existing_modfications.pdf",
+        "location": "Keuken",
+        "executedBy": "aannemer",
+        "modificationDescription": "Nieuwe keuken geplaatst",
+        "actionToBeTaken": "accepteren",
+        "comments": "Netjes geinstalleerd",
         "photos": null
       }
     },
@@ -122,28 +122,28 @@
       "propertyId": "PROP004",
       "date": "2024-07-30",
       "damage": {
-        "location": null,
-        "newDamage": null,
-        "damageType": null,
-        "acuteActionRequired": null,
-        "description": null,
+        "location": "Woonkamer",
+        "newDamage": true,
+        "damageType": "slijtage",
+        "acuteActionRequired": false,
+        "description": "Bank is versleten",
         "photos": null
       },
       "maintenance": {
-        "location": null,
-        "maintenanceType": null,
-        "acuteActionRequired": null,
-        "costEstimate": null,
-        "description": null,
+        "location": "Buitenkant",
+        "maintenanceType": "schilderwerk",
+        "acuteActionRequired": false,
+        "costEstimate": "1.500+",
+        "description": "Hele buitenkant moet geverft worden.",
         "photos": null
       },
       "installation": {
-        "location": null,
-        "installationType": null,
-        "reportedIssues": null,
-        "testProcedure": null,
-        "approved": null,
-        "comments": null,
+        "location": "nvt",
+        "installationType": "beveiliging",
+        "reportedIssues": "Gaat steeds af.",
+        "testProcedure": "test_procedure_security.pdf",
+        "approved": true,
+        "comments": "Paar instellingen veranderd, werkt weer naar behoren",
         "photos": null
       },
       "modification": {
@@ -169,9 +169,50 @@
         "photos": null
       },
       "maintenance": {
+        "location": "Zolder",
+        "maintenanceType": "verwarming",
+        "acuteActionRequired": true,
+        "costEstimate": "0-500",
+        "description": "Verwarming boven komt niet op temperatuur",
+        "photos": null
+      },
+      "installation": {
+        "location": "Slaapkamer",
+        "installationType": "electra",
+        "reportedIssues": "electra werkt op de babyslaapkamer niet meer",
+        "testProcedure": "test_procedure_electra.pdf",
+        "approved": true,
+        "comments": "De lamp veroorzaakte storing, hierdoor schoot te stroom er steeds af",
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": "existing_modfications.pdf",
+        "location": "Berging",
+        "executedBy": "huurder",
+        "modificationDescription": "Stellingen in de berging aangebracht ",
+        "actionToBeTaken": "accepteren",
+        "comments": "netjes opgebouwd.",
+        "photos": null
+      }
+    }
+  ],
+  "planned_inspections": [
+    {
+      "inspectionId": "INS006",
+      "propertyId": "PROP001",
+      "date": "2024-09-01",
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": false,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
         "location": null,
         "maintenanceType": null,
-        "acuteActionRequired": null,
+        "acuteActionRequired": true,
         "costEstimate": null,
         "description": null,
         "photos": null
@@ -180,7 +221,163 @@
         "location": null,
         "installationType": null,
         "reportedIssues": null,
-        "testProcedure": null,
+        "testProcedure": "null",
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
+      }
+    },
+    {
+      "inspectionId": "INS002",
+      "propertyId": "PROP002",
+      "date": "2024-07-28",
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": false,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": true,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": "null",
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
+      }
+    },
+    {
+      "inspectionId": "INS003",
+      "propertyId": "PROP003",
+      "date": "2024-07-29",
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": false,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": true,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": "null",
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
+      }
+    },
+    {
+      "inspectionId": "INS004",
+      "propertyId": "PROP004",
+      "date": "2024-07-30",
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": false,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": true,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": "null",
+        "approved": null,
+        "comments": null,
+        "photos": null
+      },
+      "modification": {
+        "existingModifications": null,
+        "location": null,
+        "executedBy": null,
+        "modificationDescription": null,
+        "actionToBeTaken": null,
+        "comments": null,
+        "photos": null
+      }
+    },
+    {
+      "inspectionId": "INS005",
+      "propertyId": "PROP005",
+      "date": "2024-07-31",
+      "damage": {
+        "location": null,
+        "newDamage": null,
+        "damageType": null,
+        "acuteActionRequired": false,
+        "description": null,
+        "photos": null
+      },
+      "maintenance": {
+        "location": null,
+        "maintenanceType": null,
+        "acuteActionRequired": true,
+        "costEstimate": null,
+        "description": null,
+        "photos": null
+      },
+      "installation": {
+        "location": null,
+        "installationType": null,
+        "reportedIssues": null,
+        "testProcedure": "null",
         "approved": null,
         "comments": null,
         "photos": null

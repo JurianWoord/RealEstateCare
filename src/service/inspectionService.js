@@ -1,6 +1,6 @@
 import Inspection from '@/model/inspection';
 
-const API_URL = 'https://my-json-server.typicode.com/JurianWoord/RealEstateCare/inspections';
+const API_URL = 'https://my-json-server.typicode.com/JurianWoord/RealEstateCare/executed_inspections';
 
 export async function getInspections() {
   try {
