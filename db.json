@@ -205,14 +205,14 @@
         "location": null,
         "newDamage": null,
         "damageType": null,
-        "acuteActionRequired": false,
+        "acuteActionRequired": null,
         "description": null,
         "photos": null
       },
       "maintenance": {
         "location": null,
         "maintenanceType": null,
-        "acuteActionRequired": true,
+        "acuteActionRequired": null,
         "costEstimate": null,
         "description": null,
         "photos": null
@@ -221,7 +221,7 @@
         "location": null,
         "installationType": null,
         "reportedIssues": null,
-        "testProcedure": "null",
+        "testProcedure": null,
         "approved": null,
         "comments": null,
         "photos": null
@@ -244,14 +244,14 @@
         "location": null,
         "newDamage": null,
         "damageType": null,
-        "acuteActionRequired": false,
+        "acuteActionRequired": null,
         "description": null,
         "photos": null
       },
       "maintenance": {
         "location": null,
         "maintenanceType": null,
-        "acuteActionRequired": true,
+        "acuteActionRequired": null,
         "costEstimate": null,
         "description": null,
         "photos": null
@@ -260,7 +260,7 @@
         "location": null,
         "installationType": null,
         "reportedIssues": null,
-        "testProcedure": "null",
+        "testProcedure": null,
         "approved": null,
         "comments": null,
         "photos": null

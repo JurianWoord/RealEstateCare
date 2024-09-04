@@ -2,9 +2,10 @@ import { createMemoryHistory, createRouter } from 'vue-router'
 
 import HomePage from '@/pages/homePage.vue'
 import DefaultLayout from "@/layouts/defaultLayout.vue";
-import inspectionlistPage from "@/pages/inspectionlistPage.vue";
+import executedInspectionlistPage from "@/pages/executedInspectionlistPage.vue";
 import LoginPage from "@/pages/loginPage.vue";
 import settingsPage from "@/pages/settingsPage.vue"
+import plannedInspectionlistPage from "@/pages/plannedInspectionlistPage.vue";
 
 const routes = [
   {
@@ -23,15 +24,21 @@ const routes = [
         meta: { requiresAuth: true },
       },
       {
-        name: 'inspectionlist',
-        path: 'inspectionlist',
-        component: inspectionlistPage,
+        name: 'executedInspectionlist',
+        path: 'executedInspectionlist',
+        component: executedInspectionlistPage,
         meta: { requiresAuth: true },
       },
       {
         name: 'settings',
         path: 'settings',
         component: settingsPage,
+        meta: { requiresAuth: true },
+      },
+      {
+        name: 'plannedInspectionlist',
+        path: 'plannedInspectionlist',
+        component: plannedInspectionlistPage,
         meta: { requiresAuth: true },
       },
     ],

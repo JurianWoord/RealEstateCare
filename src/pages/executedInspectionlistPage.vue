@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import { getInspections } from '@/service/inspectionService';
+import { getInspections } from '@/service/executedInspectionService';
 import DamageForm from "@/components/damageForm.vue";
 import ModificationForm from "@/components/modificationForm.vue";
 import InstallationForm from "@/components/installationForm.vue";
