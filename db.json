@@ -237,9 +237,9 @@
       }
     },
     {
-      "inspectionId": "INS002",
+      "inspectionId": "INS007",
       "propertyId": "PROP002",
-      "date": "2024-07-28",
+      "date": "2024-09-06",
       "damage": {
         "location": null,
         "newDamage": null,
@@ -276,9 +276,9 @@
       }
     },
     {
-      "inspectionId": "INS003",
+      "inspectionId": "INS008",
       "propertyId": "PROP003",
-      "date": "2024-07-29",
+      "date": "2024-09-09",
       "damage": {
         "location": null,
         "newDamage": null,
@@ -315,48 +315,9 @@
       }
     },
     {
-      "inspectionId": "INS004",
+      "inspectionId": "INS009",
       "propertyId": "PROP004",
-      "date": "2024-07-30",
-      "damage": {
-        "location": null,
-        "newDamage": null,
-        "damageType": null,
-        "acuteActionRequired": false,
-        "description": null,
-        "photos": null
-      },
-      "maintenance": {
-        "location": null,
-        "maintenanceType": null,
-        "acuteActionRequired": true,
-        "costEstimate": null,
-        "description": null,
-        "photos": null
-      },
-      "installation": {
-        "location": null,
-        "installationType": null,
-        "reportedIssues": null,
-        "testProcedure": "null",
-        "approved": null,
-        "comments": null,
-        "photos": null
-      },
-      "modification": {
-        "existingModifications": null,
-        "location": null,
-        "executedBy": null,
-        "modificationDescription": null,
-        "actionToBeTaken": null,
-        "comments": null,
-        "photos": null
-      }
-    },
-    {
-      "inspectionId": "INS005",
-      "propertyId": "PROP005",
-      "date": "2024-07-31",
+      "date": "2024-09-05",
       "damage": {
         "location": null,
         "newDamage": null,
