@@ -9,7 +9,7 @@ import MaintenanceForm from "@/components/maitenanceForm.vue";
 const inspections = ref([]);
 const showDialog = ref(false);
 const selectedItem = ref(null);
-const tab = ref('one');
+const tab = ref('damage');
 
 const headers = [
   { title: 'Nummer', key: 'inspectionId', align: 'start' },

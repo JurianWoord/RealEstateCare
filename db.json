@@ -10,32 +10,32 @@
         "damageType": "slijtage",
         "acuteActionRequired": false,
         "description": "Kleine krassen op de muur",
-        "photos": ["photo1.jpg", "photo2.jpg"]
+        "photos": null
       },
       "maintenance": {
-        "location": null,
-        "maintenanceType": null,
-        "acuteActionRequired": null,
-        "costEstimate": null,
-        "description": null,
+        "location": "Keuken",
+        "maintenanceType": "electra",
+        "acuteActionRequired": true,
+        "costEstimate": "0-500",
+        "description": "Electra hangt los uit de muur.",
         "photos": null
       },
       "installation": {
-        "location": null,
-        "installationType": null,
-        "reportedIssues": null,
-        "testProcedure": null,
-        "approved": null,
-        "comments": null,
+        "location": "Badkamer",
+        "installationType": "verwarming",
+        "reportedIssues": "verwarming doet het niet.",
+        "testProcedure": "test_procedure_heating.pdf",
+        "approved": true,
+        "comments": "Gaf een storing aan, deze hebben we opgelost.",
         "photos": null
       },
       "modification": {
-        "existingModifications": null,
-        "location": null,
-        "executedBy": null,
-        "modificationDescription": null,
-        "actionToBeTaken": null,
-        "comments": null,
+        "existingModifications": "existing_modfications.pdf",
+        "location": "Zolder",
+        "executedBy": "huurder",
+        "modificationDescription": "huurder heeft zelf een dakraam geplaatst",
+        "actionToBeTaken": "laten aanpassen en keuren",
+        "comments": "Dakraam is niet juist geplaatst en lekt.",
         "photos": null
       }
     },
@@ -44,11 +44,11 @@
       "propertyId": "PROP002",
       "date": "2024-07-28",
       "damage": {
-        "location": null,
-        "newDamage": null,
-        "damageType": null,
-        "acuteActionRequired": null,
-        "description": null,
+        "location": "Slaapkamer",
+        "newDamage": true,
+        "damageType": "moedwillig",
+        "acuteActionRequired": false,
+        "description": "Deur stuk gemaakt.",
         "photos": null
       },
       "maintenance": {
@@ -57,24 +57,24 @@
         "acuteActionRequired": true,
         "costEstimate": "500-1500",
         "description": "Oude verf bladdert af",
-        "photos": ["photo3.jpg"]
+        "photos": null
       },
       "installation": {
-        "location": null,
-        "installationType": null,
-        "reportedIssues": null,
-        "testProcedure": null,
-        "approved": null,
-        "comments": null,
+        "location": "Woonkamer",
+        "installationType": "koeling",
+        "reportedIssues": "Koeling maakt een raar geluid",
+        "testProcedure": "test_procedure_cooling.pdf",
+        "approved": true,
+        "comments": "Ingesmeerd met vet, doet het weer.",
         "photos": null
       },
       "modification": {
-        "existingModifications": null,
-        "location": null,
-        "executedBy": null,
-        "modificationDescription": null,
-        "actionToBeTaken": null,
-        "comments": null,
+        "existingModifications": "existing_modfications.pdf",
+        "location": "bijkeuken",
+        "executedBy": "aannemer",
+        "modificationDescription": "Was hok gemaakt.",
+        "actionToBeTaken": "accepteren",
+        "comments": "Juiste installatie",
         "photos": null
       }
     },
@@ -105,7 +105,7 @@
         "testProcedure": "test_procedure_heating.pdf",
         "approved": true,
         "comments": "Systeem nagekeken en gereset, bewoner had eraan gezeten, is nu verholpen",
-        "photos": ["photo4.jpg"]
+        "photos": null
       },
       "modification": {
         "existingModifications": null,
@@ -153,7 +153,7 @@
         "modificationDescription": "Nieuwe kasten geplaatst",
         "actionToBeTaken": "accepteren",
         "comments": "Hoogwaardige installatie",
-        "photos": ["photo5.jpg"]
+        "photos": null
       }
     },
     {
@@ -166,7 +166,7 @@
         "damageType": "anders",
         "acuteActionRequired": true,
         "description": "Gebroken raam door storm",
-        "photos": ["photo6.jpg", "photo7.jpg"]
+        "photos": null
       },
       "maintenance": {
         "location": null,
