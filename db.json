@@ -86,7 +86,7 @@
         "location": "Badkamer",
         "newDamage": false,
         "damageType": "anders",
-        "acuteActionRequired": "true",
+        "acuteActionRequired": true,
         "description": "Slot op badkamerdeur werkt niet.",
         "photos": null
       },
