@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import {createMemoryHistory, createRouter, createWebHistory} from 'vue-router'
 
 import HomePage from '@/pages/homePage.vue'
 import DefaultLayout from "@/layouts/defaultLayout.vue";
@@ -6,6 +6,8 @@ import executedInspectionlistPage from "@/pages/executedInspectionlistPage.vue";
 import LoginPage from "@/pages/loginPage.vue";
 import settingsPage from "@/pages/settingsPage.vue"
 import plannedInspectionlistPage from "@/pages/plannedInspectionlistPage.vue";
+import documentationPage from "@/pages/documentationPage.vue";
+import {useAppStore} from "@/store/appStore";
 
 const routes = [
   {
@@ -25,20 +27,26 @@ const routes = [
       },
       {
         name: 'executedInspectionlist',
-        path: 'executedInspectionlist',
+        path: '/executedInspectionlist',
         component: executedInspectionlistPage,
         meta: { requiresAuth: true },
       },
       {
         name: 'settings',
-        path: 'settings',
+        path: '/settings',
         component: settingsPage,
         meta: { requiresAuth: true },
       },
       {
         name: 'plannedInspectionlist',
-        path: 'plannedInspectionlist',
+        path: '/plannedInspectionlist',
         component: plannedInspectionlistPage,
+        meta: { requiresAuth: true },
+      },
+      {
+        name: 'documentation',
+        path: '/documentation',
+        component: documentationPage,
         meta: { requiresAuth: true },
       },
     ],
@@ -50,14 +58,14 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 })
 
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    if (!isLoggedIn) {
+    const appStore = useAppStore();
+    if (!appStore.isLoggedIn) {
       next({ name: 'login' });
     } else {
       next();

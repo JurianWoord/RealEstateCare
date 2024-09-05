@@ -5,7 +5,7 @@
  */
 
 // Plugins
-import { registerPlugins } from '@/plugins'
+//import { registerPlugins } from '@/plugins'
 
 // Components
 import App from './App.vue'
@@ -14,13 +14,14 @@ import router from './router'
 // Composables
 import { createApp } from 'vue'
 import { createPinia} from "pinia";
+import vuetify from "@/plugins/vuetify";
 
 const app = createApp(App)
 const pinia = createPinia()
+app.use(pinia)
+app.use(vuetify)
+app.use(router)
 
-registerPlugins(app)
 
-app
-  .use(pinia)
-  .use(router)
-  .mount('#app')
+
+app.mount('#app')

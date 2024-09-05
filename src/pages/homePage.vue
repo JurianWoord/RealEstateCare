@@ -33,7 +33,7 @@
       </v-col>
 
       <v-col cols="6">
-        <v-card class="d-flex flex-column align-center justify-center">
+        <v-card :to="{ name: 'documentation' }" class="d-flex flex-column align-center justify-center">
           <v-card-text>
             <v-icon icon="mdi-server" size="128"></v-icon>
           </v-card-text>
@@ -46,7 +46,7 @@
       </v-col>
 
       <v-col cols="6">
-        <v-card class="d-flex flex-column align-center justify-center">
+        <v-card :to="{ name: 'settings' }" class="d-flex flex-column align-center justify-center">
           <v-card-text>
             <v-icon icon="mdi-cog" size="128"></v-icon>
           </v-card-text>

@@ -18,16 +18,16 @@ const formData = ref({
   propertyId: props.item?.propertyId || null,
   damage: {
     location: props.item?.damage?.location || null,
-    newDamage: props.item?.damage?.newDamage || null,
+    newDamage: props.item?.damage?.newDamage ?? null,
     damageType: props.item?.damage?.damageType || null,
-    acuteActionRequired: props.item?.damage?.acuteActionRequired || null,
+    acuteActionRequired: props.item?.damage?.acuteActionRequired ?? null,
     description: props.item?.damage?.description || null,
     photos: props.item?.damage?.photos || []
   },
   maintenance: {
     location: props.item?.maintenance?.location || null,
     maintenanceType: props.item?.maintenance?.maintenanceType || null,
-    acuteActionRequired: props.item?.maintenance?.acuteActionRequired || null,
+    acuteActionRequired: props.item?.maintenance?.acuteActionRequired ?? null,
     costEstimate: props.item?.maintenance?.costEstimate || null,
     description: props.item?.maintenance?.description || null,
     photos: props.item?.maintenance?.photos || []
@@ -37,7 +37,7 @@ const formData = ref({
     installationType: props.item?.installation?.installationType || null,
     reportedIssues: props.item?.installation?.reportedIssues || null,
     testProcedure: props.item?.installation?.testProcedure || null,
-    approved: props.item?.installation?.approved || null,
+    approved: props.item?.installation?.approved ?? null,
     comments: props.item?.installation?.comments || null,
     photos: props.item?.installation?.photos || []
   },

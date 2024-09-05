@@ -1,15 +1,17 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import {useAppStore} from "@/store/appStore";
 
 const router = useRouter();
 
-const username = ref('');
-const password = ref('');
+const username = ref('demo');
+const password = ref('password');
 const twoFACode = ref('');
 const generated2FACode = ref('');
 const is2FAStep = ref(false);
 const errorMessage = ref('');
+const appStore = useAppStore();
 
 function handleLogin() {
   const validUsername = 'demo';
@@ -27,8 +29,7 @@ function handleLogin() {
 
 function handle2FA() {
   if (twoFACode.value === generated2FACode.value) {
-    localStorage.setItem('isLoggedIn', true);
-    localStorage.setItem('username', username.value);
+    appStore.setLogin(username.value, password.value);
     router.push({ name: 'home' });
   } else {
     errorMessage.value = 'Ongeldige 2FA-code.';
@@ -71,7 +72,11 @@ function handle2FA() {
         </v-card>
 
         <v-card v-else>
-          <v-card-title class="text-center">2FA Verification</v-card-title>
+          <v-card-title class="text-center text-h6 mb-4">Verifieer je account.</v-card-title>
+          <v-card-text class="text-center text-body-2">
+            We hebben een verificatiecode verzonden naar het bij ons bekende emailadres. <br>
+            Controleer je e-mail en vul de code hieronder in.
+          </v-card-text>
           <v-card-text>
             <v-form @submit.prevent="handle2FA">
               <v-otp-input

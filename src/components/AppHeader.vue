@@ -12,12 +12,19 @@
   </v-system-bar>
   <v-toolbar color="secondary">
 
-    <v-img @click="$router.push({ name: 'home' })" src="@/assets/logoREC-white.svg" class="text-white"></v-img>
+    <v-img
+      @click="$router.push({ name: 'home' })"
+      src="@/assets/logoREC-white.svg"
+      class="text-white"
+      alt="Logo: klik om naar homepage te gaan"></v-img>
 
     <v-spacer></v-spacer>
 
-    <v-btn icon="mdi-bell" />
-    <v-btn icon="mdi-cog" @click="$router.push({name: 'settings'})"/>
+    <v-btn icon="mdi-bell"
+           aria-label="Notificaties" />
+    <v-btn icon="mdi-cog"
+           aria-label="Instellingen"
+           @click="$router.push({name: 'settings'})"/>
 
   </v-toolbar>
 </template>
